@@ -1,10 +1,7 @@
 import pytest
 
 from main import BooksCollector
-
-ALLOWED_BOOKS_NAMES = ['A', 'B2', 'C' * 20, 'D' * 39, 'F' * 40, '     ', '$\'\"#?*@%!&>.<,=+~`-_()']
-INVALID_BOOKS_NAMES = ['', 'N' * 41, 'E' * 42, 'T' * 100]
-INVALID_GENRE = ['genre_1', 'genre_2', 'genre_3']
+from qa_python.data import ALLOWED_BOOKS_NAMES, INVALID_BOOKS_NAMES, INVALID_GENRE
 
 
 class TestBooksCollector:
